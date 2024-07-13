@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <table class="table">
+        <tr>
+          <caption>
+            Student Information
+          </caption>
+        </tr>
+        <tr>
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+          <th>Addres</th>
+          <th>IELTS Score</th>
+          <th>
+            <button type="button" class="btn__open" colspan="100">
+              Add Information
+            </button>
+          </th>
+        </tr>
+      </table>
+    </div>
+
+    <div class="popap" style="display: none">
+      <div class="overlay"></div>
+      <form action="" class="model">
+        <i class="fa-solid fa-xmark btn__close"></i>
+        <input
+          type="text"
+          class="model__fname"
+          placeholder="Student  First Name"
+          required
+        />
+        <input
+          type="text"
+          class="model__lname"
+          placeholder="Student  Last Name"
+          required
+        />
+        <div class="form-group">
+          <label for="age">Select Age:</label>
+          <select id="age" name="age" class="ageValue">
+            <option value="">Select Age</option>
+          </select>
+        </div>
+        <input type="text" class="model__addres" placeholder="Student Addres" />
+        <div class="form-group">
+          <label for="age">Select Score:</label>
+          <select id="score" name="age" class="scoreValue">
+            <option value="">Select Score</option>
+          </select>
+        </div>
+        <button type="submit" class="btnSubmit">Register</button>
+      </form>
+    </div>
+
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>
