@@ -16,13 +16,18 @@ const btnSubmit = document.querySelector(".btnSubmit");
 const table = document.querySelector(".table");
 const addres = document.querySelector(".model__addres");
 const model = document.querySelector(".model");
+const overlay = document.querySelector(".overlay");
 
-// Загрузка данных из localStorage при загрузке страницы
 window.addEventListener("load", () => {
   const storedUsers = JSON.parse(localStorage.getItem("Users")) || [];
   storedUsers.forEach((user) => {
     createUser(user);
   });
+});
+
+overlay.addEventListener("click", (event) => {
+  event.preventDefault();
+  popap.style.display = "none";
 });
 
 lastTd.forEach((e) => {
