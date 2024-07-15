@@ -94,7 +94,7 @@ btnSubmit.addEventListener("click", (e) => {
   const location = addres.value;
 
   if (!firstName || !lastName || !age || !location || !score) {
-    alert("Пожалуйста, заполните все обязательные поля.");
+    alert("Toldiring");
     return;
   }
 
